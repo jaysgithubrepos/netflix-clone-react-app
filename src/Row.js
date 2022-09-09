@@ -31,7 +31,7 @@ fetchData();
     
 
     <div className='row'>
-        <h2>{title}</h2>
+        <h2 className='row-titles'>{title}</h2>
         <div className="row__posters">
             {movies.map(movie =>(
             <img key={movie.id} className={`row_poster ${islargeRow && "row_largeposter"}`} src={`${baseURL}${islargeRow ? movie.poster_path : movie.backdrop_path}`} alt={movie.name}/>
